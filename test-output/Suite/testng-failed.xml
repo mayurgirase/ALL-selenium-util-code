@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.GridTestclass">
+        <methods>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="testUnameBlankMessage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.GridTestclass -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.GridTestclass">
+        <methods>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="testUnameBlankMessage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.GridTestclass -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
